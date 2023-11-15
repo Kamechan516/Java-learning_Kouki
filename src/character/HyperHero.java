@@ -10,4 +10,14 @@ public class HyperHero extends SuperHero{
         this.land();
         this.sit(sec);
     }
+
+    public void hide() {
+        System.out.println(this.name + "は隠れて逃げた");
+        run();
+    }
+
+    public void appear() {
+        System.out.println(this.name + "現れて転んだ");
+        slip();
+    }
 }

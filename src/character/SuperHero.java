@@ -16,4 +16,16 @@ public class SuperHero extends Hero{
         this.flying = false;
         System.out.println("着地した!");
     }
+
+    public void run() {
+        System.out.println(this.name + "は撤退した");
+    }
+
+    public void appear() {
+        System.out.println(this.name + "は現れた");
+    }
+
+    public void hide() {
+        System.out.println(this.name + "は隠れた");
+    }
 }
