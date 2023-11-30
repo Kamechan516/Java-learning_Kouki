@@ -1,5 +1,5 @@
 package character;
-public class Hero {
+public class Hero implements Version {
     public String name;//名前を管理変数
     public int hp;//HPを管理する変数
     int level = 10;//レベル（固定）
@@ -60,5 +60,10 @@ public class Hero {
         System.out.println(this.name + "は、逃げ出した！");
         System.out.println("GAMEOVER");
         System.out.println("最終HPは" + this.hp + "でした\n");
+    }
+
+    @Override
+    public void printVersion() {
+        System.out.println("Heroクラスのバージョンは" + this.ver + "です");
     }
 }

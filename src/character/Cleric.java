@@ -3,7 +3,7 @@ package character;
 import java.util.Random;
 import java.util.jar.Manifest;
 
-public class Cleric {
+public class Cleric implements Version {
 
     public String name;//名前を管理変数
     int hp = 50;//HPを管理する変数
@@ -81,6 +81,9 @@ public class Cleric {
         }
     }
 
-
+    @Override
+    public void printVersion() {
+        System.out.println("Clericクラスのバージョンは" + this.ver + "です");
+    }
 }
 

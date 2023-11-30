@@ -1,6 +1,6 @@
 package character;
 
-public class Matango {
+public class Matango implements Version {
     public int hp;
 
     final int LEVEL = 10;
@@ -16,5 +16,10 @@ public class Matango {
     
     public void attack(Hero h) {
         
+    }
+
+    @Override
+    public void printVersion() {
+        System.out.println("Matangoクラスのバージョンは" + this.ver + "です");
     }
 }
