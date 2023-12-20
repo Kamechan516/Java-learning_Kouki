@@ -62,8 +62,8 @@ public class Hero implements Version {
         System.out.println("最終HPは" + this.hp + "でした\n");
     }
 
-    @Override
-    public void printVersion() {
+    //@Override
+    /*public void printVersion() {
         System.out.println("Heroクラスのバージョンは" + this.ver + "です");
-    }
+    }*/
 }
